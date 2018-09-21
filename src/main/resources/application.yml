@@ -1,0 +1,19 @@
+azure:
+  access-key: #access-key#
+  translator:
+    url: https://api.cognitive.microsofttranslator.com
+    path: translate?api-version=3.0
+
+logging:
+  level:
+    com:
+      neogrid:
+        translator:
+          client:
+            AzureClient: DEBUG
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
